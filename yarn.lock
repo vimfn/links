@@ -351,11 +351,6 @@
   "resolved" "https://registry.npmjs.org/@fontsource/jost/-/jost-4.5.6.tgz"
   "version" "4.5.6"
 
-"@fontsource/raleway@^4.5.11":
-  "integrity" "sha512-WrFuS5q3tPqNci4iDwIf7lnkHY5jrkWswy6B007W//cAB7Iiw2NuxBNxrCetYpe3efPbEoFPcoKeTPqDzoWQ3A=="
-  "resolved" "https://registry.npmjs.org/@fontsource/raleway/-/raleway-4.5.11.tgz"
-  "version" "4.5.11"
-
 "@fontsource/sen@^4.5.3":
   "integrity" "sha512-mYqUVtIOk1DSBP95vxLSA2RQBelzNJQ9IXzbY5ymfoD8LODwkKQQzM+cONm8FV92prJPuuN61wb0zivPM1+5RQ=="
   "resolved" "https://registry.npmjs.org/@fontsource/sen/-/sen-4.5.5.tgz"
