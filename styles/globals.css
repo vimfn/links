@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap'); */
+
+/* * {
+    font-family: Ubuntu;
+} */
+
+body { font-family: "Raleway", sans-serif; }
+
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-zinc-900;
+  }
+}
