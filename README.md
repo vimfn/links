@@ -17,9 +17,9 @@
 - With Linkzia-v2, you can easily store and organize all your important links in one place. The app features a sleek and modern design, with customizable styling options to make it your own. (Read - [how to use it ?](https://github.com/its-ag/linkzia-v2/blob/main/USING.md))
 
 ## Ussage
-git clone https://github.com/its-ag/linkzia.git
 
 ```sh
+git clone https://github.com/its-ag/linkzia-v2.git
 npm install
 npm run dev
 ```
