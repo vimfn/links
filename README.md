@@ -6,7 +6,7 @@
 
 ## Features
 
-- Uses TypeScript, NextJS, TailwindJS and Spotify API 😎
+- Uses TypeScript, NextJS, TailwindCSS and Spotify API 😎
 - Profile Tags (To Show Your Interests ⭐ )
 - **Displays your current playing Spotify Song**
 - Fast, SEO Optimized, Responsive, Customizable **(Use your own Brand Colors)**
