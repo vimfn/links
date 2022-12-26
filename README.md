@@ -11,7 +11,6 @@
 - **Displays your current playing Spotify Song**
 - Fast, SEO Optimized, Responsive, Customizable **(Use your own Brand Colors)**
 
-![bob_dance](https://cdn.discordapp.com/emojis/544070714958020608.gif?size=96&quality=lossless)
 
 ## :sparkles: [Live Demo](https://linkzia-v2.vercel.app)
 
