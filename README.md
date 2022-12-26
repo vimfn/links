@@ -29,9 +29,11 @@ npm run dev
 # Using the template
 To use this template, read and follow the steps given in the [Using Guide](https://github.com/its-ag/linkzia-v2/blob/main/USING.md)
 
-#Author
+# Author
 
 - [Arunava](https://arunava.tech)
 - [twitter](https://twitter.com/@ag_arunava)
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fits-ag%2Flinkzia-v2&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=VIEWS&edge_flat=false)](https://hits.seeyoufarm.com)
+
+Also the old version is still [here](https://github.com/its-ag/linkzia).
