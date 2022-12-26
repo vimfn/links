@@ -11,10 +11,7 @@
 - Displays your current playing Spotify Song
 - Fast, SEO Optimized, Responsive, Customizable (Use your own Brand Colors :dancedood: ) 
 
-Repo: https://github.com/its-ag/linkzia-v2
-Live @ https://hi.arunava.tech/ 
-
-## :sparkles:Live Demo
+## :sparkles: [Live Demo](https://linkzia-v2.vercel.app)
 
 - With Linkzia-v2, you can easily store and organize all your important links in one place. The app features a sleek and modern design, with customizable styling options to make it your own. (Read - [how to use it ?](https://github.com/its-ag/linkzia-v2/blob/main/USING.md))
 
