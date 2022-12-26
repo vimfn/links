@@ -14,18 +14,18 @@ const SpotifyCard: NextComponentType = () => {
     if (!title) {
       return;
     }
-  
-    const words = title.split(' ');
-  
+
+    const words = title.split(" ");
+
     if (words.length <= 7) {
       return title;
     }
-  
+
     return `${words[0]} ${words[1]} ${words[2]} ${words[3]} ...`;
   }
 
-const truncatedTitle = truncateTitle(data?.title);
-const truncatedArtist = truncateTitle(data?.artist)
+  const truncatedTitle = truncateTitle(data?.title);
+  const truncatedArtist = truncateTitle(data?.artist);
 
   return (
     <>
@@ -37,16 +37,14 @@ const truncatedArtist = truncateTitle(data?.artist)
           alt="spotify icon"
         />
         {data?.isPlaying ? (
-            <Link href={data?.songUrl} passHref>
-              <p className="cursor-pointer truncate">
-                Playing {" "}
-                <span className="text-white">{truncatedTitle}</span> {" "}
-
-                {/* <span className="">{truncatedArtist}</span> */}
-              </p>
-            </Link>
+          <Link href={data?.songUrl} passHref>
+            <p className="cursor-pointer truncate">
+              Playing <span className="text-white">{truncatedTitle}</span>{" "}
+              {/* <span className="">{truncatedArtist}</span> */}
+            </p>
+          </Link>
         ) : (
-            <p>Everything so calm here.</p>
+          <p>Everything so calm here.</p>
         )}
       </div>
     </>

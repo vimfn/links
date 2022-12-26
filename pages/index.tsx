@@ -47,7 +47,8 @@ export default function Home() {
                     
                     </div>
                     <p className="text-center text-sm text-gray-400 dark:text-gray-500">
-                      <a href={website}>🌐 arunava.tech</a>
+                      <a  rel="noopener noreferrer nofollow"
+                        target="_blank" href={website}>arunava.tech</a>
                     </p>
                     <div className="mt-3 flex flex-col">
                       <p className="inline-block whitespace-pre-wrap text-center text-sm text-gray-500 dark:text-gray-400">
