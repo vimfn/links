@@ -2,7 +2,7 @@
 
 > Note: This is a template, feel free to use it. And star it if you liked :P
 
-![image](https://user-images.githubusercontent.com/102473837/209571097-a744c574-b258-480a-b70c-fee4316ca5dc.png)
+![image](https://user-images.githubusercontent.com/102473837/209662965-7ffa474e-4528-4422-9d38-5b519c54d532.png)
 
 ## Features
 
