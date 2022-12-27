@@ -53,11 +53,11 @@ export default function Home() {
                     </div>
                     <p className="text-center text-sm text-gray-400 dark:text-gray-500">
                       <a
-                        rel="noopener noreferrer nofollow"
-                        target="_blank"
-                        href={website}
+                        // rel="noopener noreferrer nofollow"
+                        // target="_blank"
+                        href=""
                       >
-                        arunava.tech
+                        hi.arunava.tech 👋🏻
                       </a>
                     </p>
                     <div className="mt-3 flex flex-col">
@@ -90,7 +90,7 @@ export default function Home() {
                       </div>
                       <div>
                         <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">👑</span>
+                          <span className="w-5">♟️</span>
                           <span className="text-banner text-xs">Chess</span>
                         </div>
                       </div>
@@ -218,7 +218,12 @@ export default function Home() {
                       </a>
                       <div className="flex items-center">
                         <div className="mx-auto inline-block">
-                          <div className="flex cursor-pointer items-center justify-center space-x-2 rounded-full border-white border-opacity-10 px-2 py-2 hover:bg-white hover:bg-opacity-5">
+                          <div
+                            onClick={() => {
+                              navigator.clipboard.writeText(discordTag);
+                            }}
+                            className="flex cursor-pointer items-center justify-center space-x-2 rounded-full border-white border-opacity-10 px-2 py-2 hover:bg-white hover:bg-opacity-5"
+                          >
                             <svg
                               className="h-5 fill-current text-indigo-500"
                               role="img"
@@ -235,6 +240,54 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
+                      <div className="max-w-s mt-1 w-full space-y-2">
+                        <div className="bg-animate group mb-1 w-full cursor-pointer rounded bg-gradient-to-r from-zinc-900 via-zinc-600 to-zinc-900 text-sm text-zinc-400 shadow transition-all">
+                          <a
+                            href="https://arunava.tech"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            className="w-full transition-all sm:hover:opacity-70"
+                          >
+                            <div>
+                              <span className="relative mt-2 flex w-full flex-row items-center justify-between rounded bg-zinc-900 text-sm leading-tight">
+                                <div className="flex items-center justify-center">
+                                  <div className="flex h-16 w-16 items-center justify-center rounded bg-zinc-800 bg-opacity-50">
+                                    <span className=""> 🌊 </span>
+                                  </div>
+                                  <div className="mx-4 flex flex-col">
+                                    <span
+                                      title="My Blog"
+                                      className="text-ellipsis text-[16px] text-zinc-400"
+                                    >
+                                      My Blog
+                                    </span>
+                                    <span
+                                      title="https://arunava.tech"
+                                      className="xs:w-[220px] mt-1 w-[175px] truncate text-ellipsis whitespace-nowrap text-[14px] text-zinc-700 sm:w-[275px] md:w-[340px] lg:w-[400px]"
+                                    >
+                                      arunava.tech
+                                    </span>
+                                  </div>
+                                </div>
+                                <span className="absolute right-2 text-zinc-600 transition-all">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                    className="h-4 w-8"
+                                  >
+                                    <path d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"></path>
+                                  </svg>
+                                </span>
+                              </span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mb-4 flex justify-center">
+                      <div className="bg-primary text-banner flex items-center justify-center rounded-full bg-opacity-90 text-xs font-medium"></div>
                     </div>
                   </div>
                 </div>
