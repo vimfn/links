@@ -31,15 +31,15 @@ function MyApp({ Component, pageProps }: AppProps) {
                 `}
       </Script>
       <NextSeo
-        title="Arunava | Frontend Developer"
-        titleTemplate="Arunava | Frontend Developer"
-        defaultTitle="Arunava | Frontend Developer"
-        description="Hey! I'm Arunava, A Frontend Developer, Blogger and a Student!"
+        title="Arunava | Web Developer"
+        titleTemplate="Arunava | Web Developer"
+        defaultTitle="Arunava | Web Developer"
+        description="Hey! I'm Arunava, A Web Developer, Blogger and a Student!"
         openGraph={{
           url: "https://www.arunava.tech/",
           title: "Arunava Ghosh | AG",
           description:
-            "Hey! I'm Arunava, A Frontend Developer, Blogger and a Student!",
+            "Hey! I'm Arunava, A Web Developer, Blogger and a Student!",
           images: [
             {
               url: "https://arunava.tech/static/images/socialbg.png",
