@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const name = "Arunava Ghosh";
 const twitter = "https://twitter.com/ag_arunava";
-const instagram = "https://instagram.com/ag_arunava"
+const instagram = "https://instagram.com/ag_arunava";
 const github = "https://github.com/its-ag";
 const lichess = "https://arunava.tech/lichess";
 const spotify = "https://arunava.tech/spotify";
@@ -25,9 +25,8 @@ export default function Home() {
             <div className="relative mb-6 flex w-full flex-col justify-center bg-opacity-90 px-2 sm:min-h-full sm:rounded-lg sm:px-6">
               <div className="flex flex-col items-center justify-center rounded-md p-2 py-4">
                 <div className="relative">
-                  
                   <Image
-                    className="bg-primary border-4 border-solid border-primary h-64 w-64 rounded-full object-cover"
+                    className="bg-primary border-primary h-64 w-64 rounded-full border-4 border-solid object-cover"
                     src="/pfp.png"
                     alt="pfp"
                     width={100}
@@ -257,7 +256,7 @@ export default function Home() {
                           />
                         </svg>
                       </a>
-                    
+
                       <a
                         rel="noopener noreferrer nofollow"
                         target="_blank"
