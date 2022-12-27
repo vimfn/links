@@ -16,17 +16,17 @@ export default function Home() {
   return (
     <div>
       <div className="flex flex-col">
-        <div className="flex min-h-screen flex-col bg-primary">
+        <div className="bg-primary flex min-h-screen flex-col">
           <div
             style={{ backgroundSize: "cover", backgroundPosition: "center" }}
-            className="h-60 w-full bg-banner"
+            className="bg-banner h-60 w-full"
           />
           <div className="mx-auto -mt-20 flex w-full max-w-2xl flex-1 flex-col items-center px-0 sm:px-10">
             <div className="relative mb-6 flex w-full flex-col justify-center bg-opacity-90 px-2 sm:min-h-full sm:rounded-lg sm:px-6">
               <div className="flex flex-col items-center justify-center rounded-md p-2 py-4">
                 <div className="relative">
                   <Image
-                    className="h-32 w-32 rounded-full border-4 border-primary bg-primary object-cover"
+                    className="border-primary bg-primary h-32 w-32 rounded-full border-4 object-cover"
                     src={"https://hi.arunava.tech/assets/pfp.png"}
                     alt="pfp"
                     width={100}
@@ -36,19 +36,29 @@ export default function Home() {
                 <div className="relative flex flex-row items-center justify-center">
                   <div className="mb-1 flex flex-col">
                     <div className="mt-1 flex flex-row items-center justify-center">
-                      <span className="flex text-center text-2xl font-bold leading-tight text-zinc-300 px-2">
-                        {name} 
+                      <span className="flex text-center text-2xl font-bold leading-tight text-zinc-300">
+                        {name}
                       </span>
-                      <span className="">
-                      {" "} 
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 0L9.99182 1.3121L12.3696 1.29622L13.3431 3.48797L15.3519 4.77336L14.9979 7.14888L16 9.32743L14.431 11.1325L14.1082 13.5126L11.8223 14.1741L10.277 16L8 15.308L5.72296 16L4.17772 14.1741L1.89183 13.5126L1.569 11.1325L0 9.32743L1.00206 7.14888L0.648112 4.77336L2.65693 3.48797L3.6304 1.29622L6.00818 1.3121L8 0Z" fill="#0095F6"></path> <path d="M10.4036 5.20536L7.18853 8.61884L6.12875 7.49364C5.8814 7.23102 5.46798 7.21864 5.20536 7.466C4.94274 7.71335 4.93036 8.12677 5.17771 8.38939L6.71301 10.0195C6.9709 10.2933 7.40616 10.2933 7.66405 10.0195L11.3546 6.10111C11.6019 5.83848 11.5896 5.42507 11.3269 5.17771C11.0643 4.93036 10.6509 4.94274 10.4036 5.20536Z" fill="white"></path> </svg>
-                      </span>
-                      
-                    
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                          aria-hidden="true"
+                          className="ml-1 h-5 w-5 text-indigo-600"
+                        >
+                          <path d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"></path>
+                        </svg>
+                      </div>
                     </div>
                     <p className="text-center text-sm text-gray-400 dark:text-gray-500">
-                      <a  rel="noopener noreferrer nofollow"
-                        target="_blank" href={website}>arunava.tech</a>
+                      <a
+                        rel="noopener noreferrer nofollow"
+                        target="_blank"
+                        href={website}
+                      >
+                        arunava.tech
+                      </a>
                     </p>
                     <div className="mt-3 flex flex-col">
                       <p className="inline-block whitespace-pre-wrap text-center text-sm text-gray-500 dark:text-gray-400">
@@ -61,33 +71,33 @@ export default function Home() {
                   <div>
                     <div className="mx-auto flex flex-wrap items-center justify-center gap-1">
                       <div>
-                        <div className="flex select-none flex-row items-center justify-center space-x-1 rounded-full border border-banner px-2 py-1 ">
+                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
                           <span className="w-5">💻</span>
-                          <span className="text-xs text-banner">Coder</span>
+                          <span className="text-banner text-xs">Coder</span>
                         </div>
                       </div>
                       <div>
-                        <div className="flex select-none flex-row items-center justify-center space-x-1 rounded-full border border-banner px-2 py-1 ">
+                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
                           <span className="w-5">🎨</span>
-                          <span className="text-xs text-banner">Designer</span>
+                          <span className="text-banner text-xs">Designer</span>
                         </div>
                       </div>
                       <div>
-                        <div className="flex select-none flex-row items-center justify-center space-x-1 rounded-full border border-banner px-2 py-1 ">
+                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
                           <span className="w-5">🎐</span>
-                          <span className="text-xs text-banner">Anime</span>
+                          <span className="text-banner text-xs">Anime</span>
                         </div>
                       </div>
                       <div>
-                        <div className="flex select-none flex-row items-center justify-center space-x-1 rounded-full border border-banner px-2 py-1 ">
+                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
                           <span className="w-5">👑</span>
-                          <span className="text-xs text-banner">Chess</span>
+                          <span className="text-banner text-xs">Chess</span>
                         </div>
                       </div>
                       <div>
-                        <div className="flex select-none flex-row items-center justify-center space-x-1 rounded-full border border-banner px-2 py-1 ">
+                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
                           <span className="w-5">🎵</span>
-                          <span className="text-xs text-banner">Music</span>
+                          <span className="text-banner text-xs">Music</span>
                         </div>
                       </div>
                     </div>
@@ -119,7 +129,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
-                          className="h-6 fill-current text-primary transition-all dark:text-gray-200"
+                          className="text-primary h-6 fill-current transition-all dark:text-gray-200"
                           role="img"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -232,7 +242,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mb-4 flex justify-center">
-            <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner">
+            <div className="bg-primary text-banner flex items-center justify-center rounded-full bg-opacity-90 text-xs font-medium">
               <NowPlaying />
             </div>
           </div>
