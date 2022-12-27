@@ -25,9 +25,10 @@ export default function Home() {
             <div className="relative mb-6 flex w-full flex-col justify-center bg-opacity-90 px-2 sm:min-h-full sm:rounded-lg sm:px-6">
               <div className="flex flex-col items-center justify-center rounded-md p-2 py-4">
                 <div className="relative">
+                  
                   <Image
-                    className=" bg-primary border-10 border-primary h-32 w-32 rounded-full object-cover"
-                    src={"https://hi.arunava.tech/assets/pfp.png"}
+                    className="bg-primary border-4 border-solid border-primary h-64 w-64 rounded-full object-cover"
+                    src="/pfp.png"
                     alt="pfp"
                     width={100}
                     height={100}
