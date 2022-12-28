@@ -8,8 +8,9 @@
     font-family: Ubuntu;
 } */
 
-body { font-family: "Raleway", sans-serif; }
-
+body {
+  font-family: "Raleway", sans-serif;
+}
 
 * {
   scroll-behavior: smooth;
@@ -24,9 +25,18 @@ body { font-family: "Raleway", sans-serif; }
 body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
-body::-webkit-scrollbar { /* WebKit */
+body::-webkit-scrollbar {
+  /* WebKit */
   width: 0;
   height: 0;
 }
+
+
+/* Put banner here, if you dont like the solid color */
+/* .bg-banner {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://i.pinimg.com/originals/ce/cc/b2/ceccb228141fdaced31a5c46ad7b3bc4.gif);
+} */
