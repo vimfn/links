@@ -163,6 +163,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
+                        className="h-7 w-7"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24px"
                           height="24px"
@@ -220,7 +221,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
-                          className="h-6 w-6"
+                          className="h-7 w-7"
                           xmlns="http://www.w3.org/2000/svg"
                           height="800"
                           width="1200"
