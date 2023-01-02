@@ -3,7 +3,7 @@
 - Star the repository to show your support
 - Also, if you need any help, feel free connect me on Discord (Arunava#1288)
 
-### Using the Portfolio Template
+### Using the Template
 
 First, click on the `Use this template` button
 
