@@ -1,6 +1,8 @@
 import { NowPlaying } from "../components";
 import Image from "next/image";
 
+import Banners from "../components/Banner";
+
 const name = "Arunava Ghosh";
 const twitter = "https://twitter.com/ag_arunava";
 const instagram = "https://instagram.com/ag_arunava";
@@ -13,6 +15,7 @@ const BuyMeACoffee = "https://www.buymeacoffee.com/arunava";
 const mail = "mailto:itsag0024@gmail.com";
 const discord = "https://discord.com/user/968448572641124352";
 const discordTag = "Arunava#1288";
+
 
 export default function Home() {
   return (
@@ -69,41 +72,8 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-4">
-                  <div>
-                    <div className="mx-auto flex flex-wrap items-center justify-center gap-1">
-                      <div>
-                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">💻</span>
-                          <span className="text-banner text-xs">Coder</span>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">🎨</span>
-                          <span className="text-banner text-xs">Designer</span>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">🎐</span>
-                          <span className="text-banner text-xs">Anime</span>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">♟️</span>
-                          <span className="text-banner text-xs">Chess</span>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="border-banner flex select-none flex-row items-center justify-center space-x-1 rounded-full border px-2 py-1 ">
-                          <span className="w-5">🎵</span>
-                          <span className="text-banner text-xs">Music</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="mt-3">
+                 <Banners/>
                 </div>
                 <div className="mt-1 rounded pt-2">
                   <div>
