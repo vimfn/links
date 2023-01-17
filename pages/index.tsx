@@ -3,12 +3,11 @@ import Image from "next/image";
 
 import Banners from "../components/Banner";
 
-
 const name = "Arunava Ghosh";
 const twitter = "https://twitter.com/ag_arunava";
 const instagram = "https://instagram.com/ag_arunava";
 const github = "https://github.com/its-ag";
-const lichess = "https://lichess.org/@/ag_arunava";
+const lichess = "https://arunava.tech/lichess";
 const spotify = "https://arunava.tech/spotify";
 const lastfm = "https://www.last.fm/user/arunava_";
 const telegram = "https://telegram.me/ag_arunava";
@@ -17,49 +16,22 @@ const mail = "mailto:itsag0024@gmail.com";
 const discord = "https://discord.com/user/968448572641124352";
 const discordTag = "Arunava#1288";
 
-import fetch from "isomorphic-unfetch";
-import { useEffect } from "react";
-
-const sendDiscordMessage = (webhookUrl: string, message: string) => {
-  fetch(webhookUrl, {
-    method: "POST",
-    body: JSON.stringify({
-      content: message,
-    }),
-    headers: { "Content-Type": "application/json" },
-  });
-};
 
 export default function Home() {
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      //to make sure useEffect runs only on the client side
-      const webhookUrl =  process.env.customKey;
-      // console.log(webhookUrl);
-      const links = document.querySelectorAll("a");
-      links.forEach((link) => {
-        link.addEventListener("click", (event) => {
-          const message = `Link clicked: ${link}`;
-          sendDiscordMessage(webhookUrl, message);
-        });
-      });
-    }
-  }, []);
-
   return (
     <div>
       <div className="flex flex-col">
-        <div className="flex min-h-screen flex-col bg-primary">
+        <div className="bg-primary flex min-h-screen flex-col">
           <div
             style={{ backgroundSize: "cover", backgroundPosition: "center" }}
-            className="h-60 w-full bg-banner"
+            className="bg-banner h-60 w-full"
           />
           <div className="mx-auto -mt-20 flex w-full max-w-2xl flex-1 flex-col items-center px-0 sm:px-10">
             <div className="relative mb-6 flex w-full flex-col justify-center bg-opacity-90 px-2 sm:min-h-full sm:rounded-lg sm:px-6">
               <div className="flex flex-col items-center justify-center rounded-md p-2 py-4">
                 <div className="relative">
                   <Image
-                    className="h-64 w-64 rounded-full border-4 border-solid border-primary bg-primary object-cover"
+                    className="bg-primary border-primary h-64 w-64 rounded-full border-4 border-solid object-cover"
                     src="/pfp.png"
                     alt="pfp"
                     width={100}
@@ -101,7 +73,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="mt-3">
-                  <Banners />
+                 <Banners/>
                 </div>
                 <div className="mt-1 rounded pt-2">
                   <div>
@@ -145,7 +117,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
-                          className="h-6 fill-current text-primary transition-all dark:text-gray-200"
+                          className="text-primary h-6 fill-current transition-all dark:text-gray-200"
                           role="img"
                           viewBox="0 0 24 24"
                           xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +133,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
-                          className="h-7 w-7"
+                        className="h-7 w-7"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24px"
                           height="24px"
@@ -420,7 +392,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="mb-4 flex justify-center">
-                      <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner"></div>
+                      <div className="bg-primary text-banner flex items-center justify-center rounded-full bg-opacity-90 text-xs font-medium"></div>
                     </div>
                   </div>
                 </div>
@@ -428,7 +400,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mb-4 flex justify-center">
-            <div className="flex items-center justify-center rounded-full bg-primary bg-opacity-90 text-xs font-medium text-banner">
+            <div className="bg-primary text-banner flex items-center justify-center rounded-full bg-opacity-90 text-xs font-medium">
               <NowPlaying />
             </div>
           </div>
