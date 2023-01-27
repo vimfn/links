@@ -35,8 +35,51 @@ body::-webkit-scrollbar {
 
 
 /* Put banner here, if you dont like the solid color */
+
 /* .bg-banner {
   background-size: cover;
   background-position: center;
-  background-image: url(https://pbs.twimg.com/profile_banners/1530479622311546880/1672253889/1500x500);
+  background-image: url(https://data.whicdn.com/images/197122776/original.gif);
 } */
+
+#snackbar {
+  visibility: hidden;
+  /* min-width: 250px; */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {top: -30px; opacity: 0;} 
+  to {top: 20px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: -30px; opacity: 0;}
+  to {top: 20px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 20px; opacity: 1;} 
+  to {top: -30px; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 20px; opacity: 1;}
+  to {top: -30px; opacity: 0;}
+}

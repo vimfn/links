@@ -1,9 +1,11 @@
 import { NowPlaying } from "../components";
 import Image from "next/image";
-
 import Banners from "../components/Banner";
 
 const name = "Arunava Ghosh";
+const belowLink = "hi.arunava.tech 👋🏻"
+const bio = "frontend & design | nextjs, typescript"
+
 const twitter = "https://twitter.com/ag_arunava";
 const instagram = "https://instagram.com/ag_arunava";
 const github = "https://github.com/its-ag";
@@ -16,6 +18,13 @@ const mail = "mailto:itsag0024@gmail.com";
 const discord = "https://discord.com/user/968448572641124352";
 const discordTag = "Arunava#1288";
 
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function () {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
 
 export default function Home() {
   return (
@@ -62,18 +71,18 @@ export default function Home() {
                         // target="_blank"
                         href=""
                       >
-                        hi.arunava.tech 👋🏻
+                      {belowLink}
                       </a>
                     </p>
                     <div className="mt-3 flex flex-col">
                       <p className="inline-block whitespace-pre-wrap text-center text-sm text-gray-500 dark:text-gray-400">
-                        frontend &amp; design | nextjs, typescript
+                    {bio}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-3">
-                 <Banners/>
+                  <Banners />
                 </div>
                 <div className="mt-1 rounded pt-2">
                   <div>
@@ -133,7 +142,7 @@ export default function Home() {
                         className="flex cursor-pointer items-center justify-center rounded-full border-white border-opacity-10 bg-opacity-10 p-1.5 transition-all"
                       >
                         <svg
-                        className="h-7 w-7"
+                          className="h-7 w-7"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24px"
                           height="24px"
@@ -323,8 +332,13 @@ export default function Home() {
                       </a>
                       <div className="flex items-center">
                         <div className="mx-auto inline-block">
+                          <div id="snackbar">Copied to clipboard</div>
                           <div
-                            onClick={() => {
+                            onClick={myFunction}
+                            // onClick={() => {
+                            //   navigator.clipboard.writeText(discordTag);
+                            // }}
+                            onClickCapture={() => {
                               navigator.clipboard.writeText(discordTag);
                             }}
                             className="flex cursor-pointer items-center justify-center space-x-2 rounded-full border-white border-opacity-10 px-2 py-2 hover:bg-white hover:bg-opacity-5"
