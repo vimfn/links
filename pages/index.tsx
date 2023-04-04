@@ -6,17 +6,17 @@ const name = "Arunava Ghosh";
 const belowLink = "hi.arunava.tech 👋🏻"
 const bio = "frontend & design | nextjs, typescript"
 
-const twitter = "https://twitter.com/ag_arunava";
-const instagram = "https://instagram.com/ag_arunava";
+const twitter = "https://twitter.com/agcodess";
+const instagram = "https://instagram.com/agcodess";
 const github = "https://github.com/its-ag";
 const lichess = "https://arunava.tech/lichess";
 const spotify = "https://arunava.tech/spotify";
 const lastfm = "https://www.last.fm/user/arunava_";
-const telegram = "https://telegram.me/ag_arunava";
+const telegram = "https://telegram.me/agcodes";
 const BuyMeACoffee = "https://www.buymeacoffee.com/arunava";
 const mail = "mailto:itsag0024@gmail.com";
 const discord = "https://discord.com/user/968448572641124352";
-const discordTag = "Arunava#1288";
+const discordTag = "/dev/ag#1288";
 
 function myFunction() {
   var x = document.getElementById("snackbar");
@@ -375,10 +375,10 @@ export default function Home() {
                                   </div>
                                   <div className="mx-4 flex flex-col">
                                     <span
-                                      title="My Blog"
+                                      title="My Portfolio"
                                       className="text-ellipsis text-[16px] text-zinc-400"
                                     >
-                                      My Blog
+                                      My Portfolio
                                     </span>
                                     <span
                                       title="https://arunava.tech"
