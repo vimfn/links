@@ -1,11 +1,21 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getNowPlaying } from "../../lib/spotify";
+import NextCors from 'nextjs-cors';
+
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
   const response = await getNowPlaying();
+
+  // You Probably don't need this, but in case you do, here's how to use it
+  await NextCors(req, res, {
+    // Options
+    methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+    origin: '*',
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+  });
 
   if (response.status === 204 || response.status > 400) {
     return res.status(200).json({ isPlaying: false });
