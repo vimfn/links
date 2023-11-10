@@ -1,11 +1,19 @@
-const path = require("path");
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'avatars.githubusercontent.com',
+            port: '',
+            pathname: '/**',
+          },
+          {
+            protocol: 'https',
+            hostname: 'i.scdn.co'
+          },
+        ],
+      },
+}
 
-module.exports = {
-  // sassOptions: {
-  //   includePaths: [path.join(__dirname, "styles")],
-  // },
-
-  images: {
-    domains: ["cdn.discordapp.com", "arunava.tech", "hi.arunava.tech"],
-  },
-};
+module.exports = nextConfig

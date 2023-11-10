@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-banner {
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://wallpapercave.com/wp/wp8519839.jpg);
+}
