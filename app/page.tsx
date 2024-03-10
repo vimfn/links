@@ -1,14 +1,15 @@
-import { config } from '@/data/config'
+import { config } from "@/data/config";
 // import Image from '@/components/Image';
-import Image from 'next/image'
-import NowPlaying from '@/components/NowPlaying';
-import DiscordTag from '@/components/DiscordTag';
-import AllBadges from '@/components/AllBadges';
+
+import NowPlaying from "@/components/NowPlaying";
+import DiscordTag from "@/components/DiscordTag";
+import AllBadges from "@/components/AllBadges";
+import { Menu } from "@/components/menu";
 
 export default function Home() {
   return (
-    <main>
-      <div>
+    <div>
+      {/* <div>
         <div className="flex flex-col">
           <div className="bg-primary flex min-h-screen flex-col">
             <div
@@ -363,7 +364,7 @@ export default function Home() {
           </div>
         </div>
         <div />
-      </div>
-    </main>
-  )
+      </div> */}
+    </div>
+  );
 }
